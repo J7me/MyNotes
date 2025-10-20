@@ -1,0 +1,299 @@
+/* --- ОБЩИЕ СТИЛИ --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Высота страницы минимум 100% высоты вьюпорта */
+}
+
+/* --- ШАПКА --- */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- ОСНОВНОЙ КОНТЕНТ --- */
+main {
+  flex: 1;
+  /* Растягиваем на оставшееся место */
+  padding: 20px;
+  max-width: 800px;
+  /* Увеличим ширину для лучшего отображения контента */
+  margin: 0 auto;
+  /* Центрируем */
+  width: 100%;
+}
+
+/* --- СТИЛИ СЕКЦИЙ ЛЕНДИНГА --- */
+.hero,
+.features,
+.cta {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.features h3,
+.cta h3 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  /* Минимальная ширина для карточек */
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #2196F3;
+}
+
+.feature h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* --- ФУТЕР --- */
+footer {
+  background: #34495e;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  /* Прижимаем к низу */
+  font-size: 0.9em;
+}
+
+/* --- СТИЛИ ФОРМ --- */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Учитываем padding в ширине */
+}
+
+/* --- СТИЛИ ОБЯЗАТЕЛЬНЫХ ПОЛЕЙ --- */
+/* Стиль для звёздочки обязательного поля */
+.required-asterisk {
+  color: #e74c3c;
+  /* Красный цвет */
+  font-weight: bold;
+  margin-left: 2px;
+  /* Небольшой отступ от текста */
+}
+
+/* --- СТИЛИ КНОПОК В ФОРМЕ --- */
+form button {
+  /* Общие стили для всех кнопок в форме */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  /* Отступ справа */
+  margin-top: 10px;
+  /* Отступ сверху */
+  background: #2196F3;
+  /* Синий */
+  color: white;
+}
+
+form button:hover {
+  background: #1976D2;
+  /* Темнее при наведении */
+}
+
+/* --- ИНДИВИДУАЛЬНЫЕ СТИЛИ КНОПОК --- */
+
+/* Кнопка "Сохранить изменения" */
+#profileEditForm button[type="submit"] {
+  background: #4CAF50;
+  /* Зелёный */
+  color: white;
+}
+
+#profileEditForm button[type="submit"]:hover {
+  background: #45a049;
+  /* Темнее при наведении */
+}
+
+/* Кнопка "Отмена" */
+#cancelEditBtn {
+  background: #f44336;
+  /* Красный */
+  color: white;
+}
+
+#cancelEditBtn:hover {
+  background: #d32f2f;
+  /* Темнее при наведении */
+}
+
+/* Кнопка "Сброс" */
+#resetEditBtn {
+  background: #ff9800;
+  /* Оранжевый */
+  color: white;
+}
+
+#resetEditBtn:hover {
+  background: #f57c00;
+  /* Темнее при наведении */
+}
+
+/* --- СТИЛИ КНОПКИ РЕДАКТИРОВАТЬ ПРОФИЛЬ (вне формы) --- */
+#editProfileBtn {
+  background: #4CAF50;
+  /* Зелёный */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  /* Отступ сверху */
+  display: inline-block;
+  /* Чтобы кнопка не растягивалась на всю ширину */
+}
+
+#editProfileBtn:hover {
+  background: #45a049;
+  /* Темнее при наведении */
+}
+
+/* --- СТИЛИ ДЛЯ СТРАНИЦЫ ЗАМЕТОК --- */
+#notesList {
+  list-style: none;
+  padding: 0;
+}
+
+#notesList li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.delete-btn {
+  float: right;
+  color: #e74c3c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #c0392b;
+}
+
+/* --- СТИЛИ ДЛЯ ПРОФИЛЯ --- */
+#profileView,
+#profileEdit {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#profileView p {
+  margin: 10px 0;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+ 
+/* --- СТИЛИ ДЛЯ ЛЕНДИНГА (кнопки призыва к действию) --- */
+.landing-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.landing-buttons a {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 0 10px;
+  background: #2196F3;
+  /* Синий цвет для кнопок на лендинге */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.landing-buttons a:hover {
+  background: #1976D2;
+  /* Темнее при наведении */
+}

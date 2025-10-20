@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Мои заметки</h1>
+    <nav> 
+      <a href="notes.html">Заметки</a>
+      <a href="#" id="logoutLink">Выйти</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ваш профиль</h2>
+    <div id="profileView">
+      <p>Имя пользователя: <strong id="profileUsername">—</strong></p>
+      <p>Имя: <strong id="profileFirstName">—</strong></p>
+      <p>Фамилия: <strong id="profileLastName">—</strong></p>
+      <p>Электронная почта: <strong id="profileEmail">—</strong></p>
+      <p>Дата рождения: <strong id="profileBirthDate">—</strong></p>
+      <p>Страна: <strong id="profileCountry">—</strong></p>
+
+      <button id="editProfileBtn">Редактировать профиль</button>
+ 
+    </div>
+
+    <div id="profileEdit" style="display: none;">
+      <h3>Редактирование профиля</h3>
+      <form id="profileEditForm">
+        <label for="editUsername">Имя пользователя:<br>
+          <input type="text" id="editUsername" name="username" disabled>
+        </label><br>
+
+        <label for="editFirstName">Имя:<br>
+          <input type="text" id="editFirstName" name="firstName" required>
+        </label><br>
+
+        <label for="editLastName">Фамилия:<br>
+          <input type="text" id="editLastName" name="lastName" required>
+        </label><br>
+
+        <label for="editEmail">Электронная почта:<br>
+          <input type="email" id="editEmail" name="email" required>
+        </label><br>
+
+        <label for="editBirthDate">Дата рождения:<br>
+          <input type="date" id="editBirthDate" name="birthDate" min="1900-01-01" max="2025-10-01">
+        </label><br>
+
+        <label for="editCountry">Страна:<br>
+          <input type="text" id="editCountry" name="country">
+        </label><br>
+
+   
+        <button type="button" id="resetEditBtn">Сброс</button>
+        <button type="submit">Сохранить изменения</button>
+        <button type="button" id="cancelEditBtn">Отмена</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Давоян Даниел Мартинович</p>
+  </footer>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

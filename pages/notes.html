@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои заметки</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Мои заметки</h1>
+    <nav>
+  
+      <a href="user.html">Профиль</a>
+      <a href="#" id="logoutLink2">Выйти</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Добавить заметку</h2>
+    <form id="noteForm">
+      <textarea id="noteText" name="noteText" placeholder="Введите заметку..." rows="4" required></textarea><br>
+      <button type="submit">Добавить заметку</button>
+    </form>
+
+    <h2>Список заметок:</h2>
+    <ul id="notesList"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; Давоян Даниел Мартинович</p>
+  </footer>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Мои заметки</h1>
+    <nav>
+      <a href="../index.html">Главная</a>
+      <a href="auth.html">Вход</a>
+ 
+    </nav>
+  </header>
+
+  <main>
+    <h2>Регистрация</h2>
+    <form id="registerForm">
+      <label for="regUsername">Имя пользователя<span class="required-asterisk">*</span>:<br>
+        <input type="text" id="regUsername" name="username" required>
+      </label><br>
+
+      <label for="regPassword">Пароль<span class="required-asterisk">*</span>:<br>
+        <input type="password" id="regPassword" name="password" required>
+      </label><br>
+
+      <label for="regEmail">Электронная почта<span class="required-asterisk">*</span>:<br>
+        <input type="email" id="regEmail" name="email" required>
+      </label><br>
+
+      <label for="regFirstName">Имя<span class="required-asterisk">*</span>:<br>
+        <input type="text" id="regFirstName" name="firstName" required>
+      </label><br>
+
+      <label for="regLastName">Фамилия<span class="required-asterisk">*</span>:<br>
+        <input type="text" id="regLastName" name="lastName" required>
+      </label><br>
+
+      <label for="regBirthDate">Дата рождения:<br>
+        <input type="date" id="regBirthDate" name="birthDate">
+      </label><br>
+
+      <label for="regCountry">Страна:<br>
+        <input type="text" id="regCountry" name="country">
+      </label><br>
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; Давоян Даниел Мартинович</p>
+  </footer>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
